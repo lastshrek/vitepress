@@ -50,6 +50,7 @@
 ## 其他常用的参数
 
 `shrink-0` 等效为 `flex-shrink: 0`
+
 `shrink` 等效为 `flex-shrink： 1`
 
 `flex-grow` 同理
