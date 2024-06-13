@@ -1,6 +1,6 @@
 # 安装依赖
 
-安装tailwindcss所需项目依赖，并生成`tailwind.config.js`和`postcss.js`
+安装tailwindcss所需项目依赖，并生成`tailwind.config.js`和`postcss.config.js`
 
 ```npm
 pnpm install -D tailwindcss postcss autoprefixer
