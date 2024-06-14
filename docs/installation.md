@@ -2,12 +2,14 @@
 
 安装tailwindcss所需项目依赖，并生成`tailwind.config.js`和`postcss.config.js`
 
-```npm
+```
 pnpm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 ```
 
 ## 配置文件修改
+
+在`tailwind.config.js`文件中添加代码
 
 ```js
 /** @type {import('tailwindcss').Config} */
@@ -38,20 +40,9 @@ module.exports = {
 
 ```ts
 import 'mars3d-cesium/Build/Cesium/Widgets/widgets.css'
-import 'mars3d-cesium'
 import './assets/css/index.css' // [!code focus]
-import 'mars3d/dist/mars3d.css'
-import 'mars3d'
-import { createApp } from 'vue'
-import { createPinia } from 'pinia'
-
 const app = createApp(App)
-
-app.use(router).use(MarsUI).use(injectState(marsStore), key).use(createPinia())
-app.component('SvgIcon', SvgIcon)
-app.use(uploader)
 app.mount('#app')
-
 document.title = import.meta.env.VITE_PROJ_TITLE
 ```
 
